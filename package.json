@@ -1,0 +1,24 @@
+{
+  "name": "personal-website-assignment-3",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "tailwind:watch": "npx tailwindcss -i ./src/css/style.css -o ./src/css/global.css --watch",
+    "tailwind:build": "npx tailwindcss -i ./src/css/style.css -o ./src/css/global.css",
+    "dev": "concurrently \"npm run tailwind:watch\" \"vite\"",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "prettier": "^3.2.4",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.0.8"
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.9.2",
+    "typed.js": "^2.1.0"
+  }
+}

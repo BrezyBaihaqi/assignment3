@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&family=Poppins:wght@500&display=swap");
+
+@layer base {
+  h2 {
+    @apply font-display text-3xl font-bold tracking-wide sm:text-5xl md:text-5xl/tight;
+  }
+  h3 {
+    @apply font-display whitespace-nowrap text-2xl font-semibold leading-none tracking-tight;
+  }
+  p {
+    @apply text-justify font-sans text-gray-600 sm:text-lg md:p-3 md:text-xl;
+  }
+
+  button {
+    @apply mt-2 inline-flex h-10 items-center justify-center rounded-md bg-indigo-400 px-4 py-2 text-sm font-medium text-slate-100 active:bg-indigo-500 sm:mt-0;
+  }
+}
+
+@layer components {
+  .brand {
+    @apply bg-gradient-to-r from-white via-yellow-300 to-cyan-100 bg-clip-text text-2xl font-bold text-transparent drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] sm:text-3xl;
+  }
+
+  .gradientbg {
+    @apply bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500;
+  }
+
+  .card {
+    @apply ml-auto mr-auto mt-3 h-[300px] rounded-xl border md:float-left md:mr-1 md:flex;
+  }
+
+  .cardcontainer {
+    @apply rounded-lg border shadow-sm;
+  }
+
+  .tooltip {
+    @apply text-center font-bold transition duration-300 ease-in-out hover:animate-bounce;
+  }
+
+  .iconcenter {
+    @apply ml-auto mr-auto;
+  }
+
+  .sectionclass {
+    @apply p-6 sm:p-8 md:p-10;
+  }
+
+  .welcomepage {
+    @apply fixed z-10 flex h-full w-full items-center justify-center gap-1 overflow-auto bg-purple-500;
+  }
+}
