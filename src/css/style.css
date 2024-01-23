@@ -26,7 +26,7 @@
   }
 
   u {
-    @apply decoration-red-500 decoration-1;
+    @apply decoration-red-500 decoration-2;
   }
 }
 
@@ -36,7 +36,7 @@
   }
 
   .gradientbg {
-    @apply bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500;
+    @apply bg-gradient-to-r from-rose-400  to-indigo-500;
   }
 
   .card {
@@ -44,7 +44,7 @@
   }
 
   .cardcontainer {
-    @apply max-w-[500px] justify-between gap-2 rounded-lg border shadow-sm hover:scale-110 hover:transform;
+    @apply max-w-[500px] justify-between gap-2 rounded-lg border bg-gray-50 shadow-md hover:scale-110 hover:transform;
   }
 
   .cardWrap {
