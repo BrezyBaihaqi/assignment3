@@ -8,7 +8,30 @@
   </head>
   <body>
     <!-- typed.js -->
-    <div id="welcomepage" class="welcomepage flex flex-row"></div>
+    <div id="welcomepage" class="welcomepage flex flex-row">
+      <div class="iconcenter w-7/125/12 mb-auto mt-auto">
+        <h4 class="iconcenter px-5">
+          Hi, <span id="typedJS" class="typedJS"></span><br />
+          This is your friend,
+          <span class="brand text-lg">Ahmad B Baihaqi</span> typing.
+          <br />Please keep your seat belt fastened until the session comes to a
+          complete. Our journey is still long enough. Let's make it untill the
+          end together
+        </h4>
+        <button
+          id="exit-button"
+          class="iconcenter mt-3 flex rounded bg-indigo-500 px-4 py-2 font-bold text-white hover:bg-indigo-700"
+        >
+          <img
+            width="24"
+            height="24"
+            src="https://img.icons8.com/color/24/confetti.png"
+            alt="confetti"
+          />
+          Cheer for Us
+        </button>
+      </div>
+    </div>
     <!-- header -->
     <header
       class="gradientbg fixed w-full rounded-b-xl p-6 text-center text-slate-100 sm:flex sm:items-center sm:justify-between"
@@ -175,7 +198,7 @@
                 >
               </h2>
               <p class="max-w-[600px] dark:text-gray-400">
-                Send me a message and I'll get back to you as soon as possible.
+                put your e-mail and I'll get back to you as soon as possible.
               </p>
             </div>
             <div class="mx-auto w-full max-w-sm space-y-2">
@@ -186,16 +209,21 @@
                   type="email"
                   required
                 />
-                <button id="confettiBtn" class="bg-indigo-400" type="submit">
+                <button
+                  id="confettiBtn"
+                  class="bg-indigo-400"
+                  type="submit"
+                  onclick="alert('thank, you! I\'ll reach you soon')"
+                >
                   Send Message
                 </button>
               </form>
-              <p class="text-xs dark:text-gray-400">
+              <h4 class="iconcenter text-xs dark:text-gray-400">
                 Your email is safe with me.
                 <a class="underline underline-offset-2" href="#">
                   No Terms &amp; Conditions
                 </a>
-              </p>
+              </h4>
             </div>
           </div>
         </div>

@@ -9,7 +9,7 @@
     @apply font-display text-3xl font-bold tracking-wide sm:text-5xl md:text-5xl/tight;
   }
   h3 {
-    @apply font-display whitespace-nowrap text-2xl font-semibold leading-none tracking-tight;
+    @apply whitespace-nowrap font-display text-2xl font-semibold leading-none tracking-tight;
   }
   p {
     @apply text-justify font-sans text-gray-600 sm:text-lg md:p-3 md:text-xl;
@@ -34,7 +34,7 @@
   }
 
   .cardcontainer {
-    @apply rounded-lg border shadow-sm;
+    @apply max-w-[500px] justify-between gap-2 rounded-lg border shadow-sm;
   }
 
   .tooltip {
@@ -50,6 +50,10 @@
   }
 
   .welcomepage {
-    @apply fixed z-10 flex h-full w-full items-center justify-center gap-1 overflow-auto bg-purple-500;
+    @apply fixed z-10 flex h-full w-full overflow-auto bg-black text-white;
+  }
+
+  .typedJS {
+    @apply bg-white text-2xl text-black sm:text-3xl md:text-4xl;
   }
 }
