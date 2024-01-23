@@ -9,7 +9,7 @@
     @apply font-display text-3xl font-bold tracking-wide sm:text-5xl md:text-5xl/tight;
   }
   h3 {
-    @apply whitespace-nowrap font-display text-2xl font-semibold leading-none tracking-tight;
+    @apply d:text-4xl whitespace-nowrap font-display text-2xl font-semibold leading-none tracking-tight sm:text-3xl;
   }
   p {
     @apply text-justify font-sans text-gray-600 sm:text-lg md:p-3 md:text-xl;
@@ -17,6 +17,10 @@
 
   button {
     @apply mt-2 inline-flex h-10 items-center justify-center rounded-md bg-indigo-400 px-4 py-2 text-sm font-medium text-slate-100 active:bg-indigo-500 sm:mt-0;
+  }
+
+  u {
+    @apply decoration-red-500 decoration-1;
   }
 }
 
@@ -30,15 +34,19 @@
   }
 
   .card {
-    @apply ml-auto mr-auto mt-3 h-[300px] rounded-xl border md:float-left md:mr-1 md:flex;
+    @apply mb-3 ml-auto mr-auto mt-3 h-[300px] rounded-xl border md:float-left md:mr-1 md:flex;
   }
 
   .cardcontainer {
-    @apply max-w-[500px] justify-between gap-2 rounded-lg border shadow-sm;
+    @apply max-w-[500px] justify-between gap-2 rounded-lg border shadow-sm hover:transform;
+  }
+
+  .cardWrap {
+    @apply flex flex-col space-y-1.5 p-3;
   }
 
   .tooltip {
-    @apply text-center font-bold transition duration-300 ease-in-out hover:animate-bounce;
+    @apply text-center font-bold transition duration-300 ease-in-out;
   }
 
   .iconcenter {

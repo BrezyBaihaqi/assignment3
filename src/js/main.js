@@ -5,6 +5,8 @@ let welcomePage = document.getElementById("welcomepage");
 const confettiBtn = document.getElementById("confettiBtn");
 const exitButton = document.getElementById("exit-button");
 let typedJS = document.querySelector("typedJS");
+const submitBtn = document.getElementById("submitBtn");
+let inputForm = document.getElementById("inputForm");
 
 function doSomething() {
   console.info("DOM Loaded");
@@ -84,11 +86,16 @@ exitButton.addEventListener("click", () => {
     resize: true,
     useWorker: true,
   });
+
+  const scalar = 2;
+  var pineapple = confetti.shapeFromText({ text: "DEVSCALE", scalar });
+
   myConfetti({
     particleCount: 200,
     spread: 900,
     origin: { x: 0.4 },
-    shapes: ["star"],
+    shapes: ["star", pineapple],
+    scalar,
   });
   console.log(myConfetti);
 });

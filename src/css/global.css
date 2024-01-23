@@ -529,6 +529,11 @@ button:active {
   }
 }
 
+u {
+  text-decoration-color: #ef4444;
+  text-decoration-thickness: 1px;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -908,10 +913,6 @@ button:active {
 
 .gap-4 {
   gap: 1rem;
-}
-
-.gap-3 {
-  gap: 0.75rem;
 }
 
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {

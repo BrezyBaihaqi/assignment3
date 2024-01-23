@@ -34,7 +34,7 @@
     </div>
     <!-- header -->
     <header
-      class="gradientbg fixed w-full rounded-b-xl p-6 text-center text-slate-100 sm:flex sm:items-center sm:justify-between"
+      class="gradientbg relative w-full p-6 text-center text-slate-100 sm:flex sm:items-center sm:justify-between"
     >
       <div>
         <h1 class="brand">Ahmad B Baihaqi.</h1>
@@ -66,7 +66,33 @@
         </div>
       </section>
       <section id="about" class="sectionclass">
-        <h3 class="mb-4">About Me</h3>
+        <h3 class="mb-4"><u>About Me</u></h3>
+        <div class="mr-3 flex justify-between gap-3">
+          <!--link to media social-->
+          <a href="" target="_blank">
+            <img
+              width="24"
+              height="24"
+              src="https://img.icons8.com/ios/24/twitterx--v1.png"
+              alt="twitterx--v1"
+          /></a>
+          <a href="" target="_blank"
+            ><img
+              width="24"
+              height="24"
+              src="https://img.icons8.com/color/24/discord-logo.png"
+              alt="discord-logo"
+            />
+          </a>
+          <a href="" target="_blank"
+            ><img
+              width="24"
+              height="24"
+              src="https://img.icons8.com/ios/24/github--v1.png"
+              alt="github--v1"
+            />
+          </a>
+        </div>
         <p class="p-0">
           Devscale student who aim to be fluent in writing code, build something
           and create some cool stuff using Javascript.
@@ -74,7 +100,7 @@
       </section>
       <section id="skill" class="sectionclass border-y-2 bg-gray-50">
         <h3 class="mb-4">
-          Tech Stack
+          <u>Tech Stack</u>
           <span class="text-sm text-slate-400">(try to hover on icon)</span>
         </h3>
         <div class="flex space-x-4 sm:space-x-6 md:space-x-8">
@@ -134,53 +160,58 @@
 
       <!-- project card -->
       <section id="project" class="sectionclass">
-        <h3 class="mb-4 sm:text-3xl md:text-4xl">Projects</h3>
+        <h3 class="mb-4"><u>Projects</u></h3>
         <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           <div class="cardcontainer">
-            <div class="flex flex-col space-y-1.5 p-6">
-              <a href="https://fgyh3s.cbb.app"><h3>Link in Bio</h3></a>
-            </div>
-            <div class="p-6">
-              <img class="card" src="./assets/linkinbio.png" alt="tes" />
-              <p>
-                This project is submitted for The First Assignment at Devscale.
-                Using just only HTML and CSS, I force myself to create link in
-                bio app like Linktree. I implement shadow and little transition
-                on button element to make it like real button when clicked.
-              </p>
-            </div>
+            <a href="https://fgyh3s.cbb.app " target="_blank">
+              <div class="cardWrap">
+                <h3 class="pb-0 text-center">Link in Bio</h3>
+              </div>
+              <div class="p-6">
+                <img class="card" src="./assets/linkinbio.png" alt="tes" />
+                <p class="md:p-0">
+                  This project is submitted for The First Assignment at
+                  Devscale. Using just only HTML and CSS, I force myself to
+                  create link in bio app like Linktree. I implement shadow and
+                  little transition on button element to make it like real
+                  button when clicked.
+                </p>
+              </div>
+            </a>
           </div>
           <div class="cardcontainer">
-            <div class="flex flex-col space-y-1.5 p-6">
-              <a href="https://mr9srk.csb.app/"
-                ><h3>Simple Movie Website</h3></a
-              >
-            </div>
-            <div class="p-6">
-              <img class="card" src="./assets/movieapp.jpeg" alt="tes" />
-              <p>
-                This is The Second Assignment which I submitted for Devscale -
-                Fullstack Bootcamp. The task take a lot time, error and
-                curiousity. It needs 2 days for me to figure out how to display
-                container above another container using z-index. Thanks to all
-                friends in Alghorithmic team.
-              </p>
-            </div>
+            <a href="https://mr9srk.csb.app/" target="_blank">
+              <div class="cardWrap">
+                <h3 class="pb-0 text-center">Simple Movie Website</h3>
+              </div>
+              <div class="p-6">
+                <img class="card" src="./assets/movieapp.jpeg" alt="tes" />
+                <p class="md:p-0">
+                  This is The Second Assignment which I submitted for Devscale -
+                  Fullstack Bootcamp. The task take a lot time, error and
+                  curiousity. It needs 2 days for me to figure out how to
+                  display container above another container using z-index.
+                  Thanks to all friends in Alghorithmic team.
+                </p>
+              </div>
+            </a>
           </div>
           <div class="cardcontainer">
-            <div class="flex flex-col space-y-1.5 p-6">
-              <a href="#"><h3>Personal Website with Confetti</h3></a>
-            </div>
-            <div class="p-6">
-              <img class="card w-56" src="./assets/confetti.png" alt="tes" />
-              <p>
-                Confetti are small pieces or streamers of paper, mylar, or
-                metallic material which are usually thrown at celebrations. The
-                origins are from the Latin confectum. In this Third Assignment,
-                I have to make personal website and (one of the requirement) is
-                implement Confetti.
-              </p>
-            </div>
+            <a href="#">
+              <div class="cardWrap">
+                <h3 class="pb-0 text-center">Personal Website with Confetti</h3>
+              </div>
+              <div class="p-6">
+                <img class="card w-56" src="./assets/confetti.png" alt="tes" />
+                <p class="md:p-0">
+                  Confetti are small pieces or streamers of paper, mylar, or
+                  metallic material which are usually thrown at celebrations.
+                  The origins are from the Latin confectum. In this Third
+                  Assignment, I have to make personal website and (one of the
+                  requirement) is implement Confetti.
+                </p>
+              </div>
+            </a>
           </div>
         </div>
       </section>
@@ -204,17 +235,13 @@
             <div class="mx-auto w-full max-w-sm space-y-2">
               <form class="sm:flex sm:space-x-2">
                 <input
+                  id="inputForm"
                   class="flex h-10 w-full max-w-lg flex-1 rounded-md border px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2"
                   placeholder="Enter your email"
                   type="email"
                   required
                 />
-                <button
-                  id="confettiBtn"
-                  class="bg-indigo-400"
-                  type="submit"
-                  onclick="alert('thank, you! I\'ll reach you soon')"
-                >
+                <button id="submitBtn" class="bg-indigo-400" type="submit">
                   Send Message
                 </button>
               </form>
@@ -233,7 +260,7 @@
       class="gradientbg flex content-center justify-center rounded-t-xl object-center text-white"
     >
       <p class="text-sm text-white dark:opacity-90">
-        © Crafted with care, confius and curious by Ahmad B Baihaqi.
+        Crafted with care, confused &amp; curious by Ahmad B Baihaqi.
       </p>
     </footer>
     <!-- </div> -->
